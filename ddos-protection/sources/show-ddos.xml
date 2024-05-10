@@ -1,0 +1,43 @@
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/22.2R0/junos">
+    <ddos-protocols-information xmlns="http://xml.juniper.net/junos/22.2R0/junos-jddosd" junos:style="statistics">
+        <total-packet-types>1</total-packet-types>
+        <packet-types-rcvd-packets>1</packet-types-rcvd-packets>
+        <packet-types-in-violation>0</packet-types-in-violation>
+        <ddos-protocol-group>
+            <group-name>VXLAN</group-name>
+            <ddos-protocol>
+                <packet-type>aggregate</packet-type>
+                <ddos-system-statistics junos:style="clean-aggr">
+                    <packet-received>590167</packet-received>
+                    <packet-arrival-rate>0</packet-arrival-rate>
+                    <packet-dropped>0</packet-dropped>
+                    <packet-arrival-rate-max>11</packet-arrival-rate-max>
+                </ddos-system-statistics>
+                <ddos-instance junos:style="detail">
+                    <protocol-states-locale>Routing Engine</protocol-states-locale>
+                    <ddos-instance-statistics junos:style="clean-aggr">
+                        <packet-received>0</packet-received>
+                        <packet-arrival-rate>0</packet-arrival-rate>
+                        <packet-dropped>0</packet-dropped>
+                        <packet-arrival-rate-max>0</packet-arrival-rate-max>
+                        <packet-dropped-others>0</packet-dropped-others>
+                    </ddos-instance-statistics>
+                </ddos-instance>
+                <ddos-instance junos:style="detail">
+                    <protocol-states-locale>FPC slot 0</protocol-states-locale>
+                    <ddos-instance-statistics junos:style="clean-aggr">
+                        <packet-received>590167</packet-received>
+                        <packet-arrival-rate>0</packet-arrival-rate>
+                        <packet-dropped>0</packet-dropped>
+                        <packet-arrival-rate-max>11</packet-arrival-rate-max>
+                        <packet-dropped-others>0</packet-dropped-others>
+                        <packet-dropped-flows>0</packet-dropped-flows>
+                    </ddos-instance-statistics>
+                </ddos-instance>
+            </ddos-protocol>
+        </ddos-protocol-group>
+    </ddos-protocols-information>
+    <cli>
+        <banner>{master:0}</banner>
+    </cli>
+</rpc-reply>
